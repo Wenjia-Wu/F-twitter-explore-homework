@@ -4,20 +4,35 @@
   align-items: center;
   height: 80%;
   .login-section {
-    height: 450px;
-    width: 400px;
-    border: solid 1px $border-color;
+    height: $login-section-height;
+    width: $login-section-width;
+    border: solid $border-size $border-color;
+    border-radius: $border-radius-base;
     padding: $base-padding-x $base-padding-y;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    h2 {
-      text-align: center;
-    }
     .button-list {
+      height: $button-list-height;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: space-around;
+      li {
+        width: 100%;
+      }
     }
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: solid $border-size $border-color;
+      font-size: $font-size-base;
+      height: $input-height;
+    }
+    .forget-password {
+      color: $primary-color;
+    }
+  }
+  center-text {
+    text-align: center;
   }
 }

@@ -1,0 +1,17 @@
+.btn-default {
+  @include btn-variant($primary-color, transparent);
+}
+
+.btn-primary {
+  @include btn-variant($white, $primary-color);
+}
+
+.btn-default-big {
+  @extend .btn-default;
+  width: 100%;
+}
+
+.btn-primary-big {
+  @extend .btn-primary;
+  width: 100%;
+}
